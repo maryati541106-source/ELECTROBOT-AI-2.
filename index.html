@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELECTROBOT AI | TVET Electrical Learning Chatbot</title>
+  <meta name="description" content="ELECTROBOT AI - TVET Electrical Learning Chatbot untuk pembelajaran elektrik.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">⚡</span>
+      <div><strong>ELECTROBOT</strong> <span>AI</span><small>TVET Electrical Learning Chatbot</small></div>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="#home">Utama</a>
+      <a href="#notes">Nota</a>
+      <a href="#components">Komponen</a>
+      <a href="#troubleshoot">Troubleshooting</a>
+      <a href="#quiz">Kuiz</a>
+      <a href="#chat">Tanya AI</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TVET ELECTRICAL LEARNING CHATBOT</p>
+        <h1>ELECTROBOT <span>AI</span></h1>
+        <p class="tagline">“Learn, Ask, Solve – Anytime, Anywhere”</p>
+        <p class="intro">Ruang pembelajaran digital untuk membantu murid PVMA memahami konsep, komponen, keselamatan, pendawaian dan troubleshooting elektrik.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#chat">🤖 Tanya ELECTROBOT AI</a>
+          <a class="btn secondary" href="#quiz">🏆 Cuba Kuiz</a>
+        </div>
+        <div class="feature-row">
+          <span>🤖 AI Powered</span><span>📖 Nota Interaktif</span><span>❓ Tanya & Jawab</span><span>🏆 Kuiz</span><span>▶️ Video Amali</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/electrobot-poster.png" alt="Poster ELECTROBOT AI asal">
+        <p class="image-note">Robot ELECTROBOT dikekalkan daripada reka bentuk asal.</p>
+      </div>
+    </section>
+
+    <section class="quick-grid">
+      <a href="#notes" class="quick-card"><b>📖</b><strong>Nota Elektrik</strong><small>Konsep asas & keselamatan</small></a>
+      <a href="#components" class="quick-card"><b>🔌</b><strong>Komponen Elektrik</strong><small>MCB, RCCB, contactor & relay</small></a>
+      <a href="#troubleshoot" class="quick-card"><b>🛠️</b><strong>Troubleshooting AI</strong><small>Kenal pasti punca masalah</small></a>
+      <a href="#quiz" class="quick-card"><b>🏆</b><strong>Kuiz Kendiri</strong><small>10 soalan & markah segera</small></a>
+    </section>
+
+    <section id="notes" class="section">
+      <div class="section-title"><span>02</span><div><p>PEMBELAJARAN</p><h2>Nota Elektrik</h2></div></div>
+      <div class="note-grid">
+        <article class="note-card"><h3>⚡ Bekalan Elektrik</h3><p>Kenali bekalan satu fasa dan tiga fasa, voltan, arus dan kuasa.</p><button onclick="showInfo('Bekalan elektrik')">Buka nota</button></article>
+        <article class="note-card"><h3>🔣 Simbol Elektrik</h3><p>Kenali simbol asas yang digunakan dalam litar dan lukisan elektrik.</p><button onclick="showInfo('Simbol elektrik')">Buka nota</button></article>
+        <article class="note-card"><h3>🛡️ MCB & RCCB</h3><p>Fahami fungsi perlindungan litar daripada arus berlebihan dan kebocoran arus.</p><button onclick="showInfo('MCB dan RCCB')">Buka nota</button></article>
+        <article class="note-card"><h3>⚙️ Motor Elektrik</h3><p>Asas fungsi motor, sambungan dan faktor keselamatan semasa amali.</p><button onclick="showInfo('Motor elektrik')">Buka nota</button></article>
+        <article class="note-card"><h3>🏠 Pendawaian Domestik</h3><p>Komponen dan prinsip asas pendawaian soket serta lampu.</p><button onclick="showInfo('Pendawaian domestik')">Buka nota</button></article>
+        <article class="note-card"><h3>🦺 Keselamatan Bengkel</h3><p>Amalan selamat, PPE, pengasingan bekalan dan pemeriksaan sebelum bekerja.</p><button onclick="showInfo('Keselamatan bengkel')">Buka nota</button></article>
+      </div>
+    </section>
+
+    <section id="components" class="section alt">
+      <div class="section-title"><span>03</span><div><p>KENALI</p><h2>Komponen Elektrik</h2></div></div>
+      <div class="component-grid">
+        <article class="component-card"><div class="component-icon">MCB</div><h3>MCB</h3><p>Melindungi litar daripada arus berlebihan dan litar pintas.</p></article>
+        <article class="component-card"><div class="component-icon">R</div><h3>RCCB</h3><p>Mengesan kebocoran arus ke bumi dan membantu perlindungan pengguna.</p></article>
+        <article class="component-card"><div class="component-icon">C</div><h3>Contactor</h3><p>Peranti elektromekanikal untuk mengawal beban seperti motor.</p></article>
+        <article class="component-card"><div class="component-icon">OL</div><h3>Overload Relay</h3><p>Melindungi motor daripada beban berlebihan yang berpanjangan.</p></article>
+      </div>
+    </section>
+
+    <section id="troubleshoot" class="section">
+      <div class="section-title"><span>04</span><div><p>SELESAIKAN</p><h2>Troubleshooting AI</h2></div></div>
+      <div class="trouble-box">
+        <div>
+          <h3>💡 Lampu merah overload tidak menyala</h3>
+          <p>Gunakan langkah semakan berikut sebagai panduan pembelajaran:</p>
+          <ol>
+            <li>Pastikan bekalan kuasa tersedia.</li>
+            <li>Periksa sambungan 95 dan 96.</li>
+            <li>Periksa sambungan 97 dan 98.</li>
+            <li>Uji mentol atau indikator.</li>
+            <li>Periksa keadaan overload relay.</li>
+          </ol>
+          <p class="safety">⚠️ Untuk kerja sebenar, matikan dan asingkan bekalan mengikut prosedur keselamatan serta dapatkan bimbingan guru/kompeten.</p>
+        </div>
+        <div class="diagnostic">
+          <h3>Taip masalah anda</h3>
+          <textarea id="problem" placeholder="Contoh: Motor tidak berpusing..."></textarea>
+          <button class="btn primary" onclick="diagnose()">Jana panduan</button>
+          <div id="diagnosis" class="answer"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section alt">
+      <div class="section-title"><span>05</span><div><p>UJI DIRI</p><h2>Kuiz Kendiri</h2></div></div>
+      <div class="quiz-card">
+        <div class="quiz-head"><span id="qnum">Soalan 1 / 10</span><span>Markah: <b id="score">0</b></span></div>
+        <h3 id="question"></h3>
+        <div id="options" class="options"></div>
+        <button id="nextBtn" class="btn primary" onclick="nextQuestion()" disabled>Soalan Seterusnya →</button>
+        <div id="quizResult"></div>
+      </div>
+    </section>
+
+    <section id="chat" class="section">
+      <div class="section-title"><span>07</span><div><p>SOAL JAWAB</p><h2>Chat dengan ELECTROBOT AI</h2></div></div>
+      <div class="chat-wrap">
+        <div id="chatMessages" class="messages">
+          <div class="msg bot"><b>ELECTROBOT AI 🤖</b><br>Hai! Saya ELECTROBOT AI. Tanya saya tentang asas elektrik, MCB, RCCB, motor, pendawaian atau keselamatan.</div>
+        </div>
+        <div class="chat-input">
+          <input id="chatInput" placeholder="Taip soalan anda..." onkeydown="if(event.key==='Enter') sendMessage()">
+          <button onclick="sendMessage()">➤</button>
+        </div>
+        <div class="suggestions">
+          <button onclick="ask('Apa fungsi RCCB?')">Apa fungsi RCCB?</button>
+          <button onclick="ask('Apa fungsi MCB?')">Apa fungsi MCB?</button>
+          <button onclick="ask('Kenapa motor tidak berpusing?')">Motor tidak berpusing?</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-title"><span>08</span><div><p>GAMIFIKASI</p><h2>Cabaran Mingguan</h2></div></div>
+      <div class="challenge-grid">
+        <div class="challenge"><span>🥇</span><h3>Cabaran 1</h3><p>Kenal pasti 10 simbol elektrik.</p></div>
+        <div class="challenge"><span>🥇</span><h3>Cabaran 2</h3><p>Bina litar lampu satu hala.</p></div>
+        <div class="challenge"><span>🥇</span><h3>Cabaran 3</h3><p>Cari kerosakan pada litar yang diberikan.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>ELECTROBOT AI</strong> · TVET Electrical Learning Chatbot<br>
+    <small>Prototype pembelajaran PVMA · Dibina untuk GitHub Pages</small>
+  </footer>
+
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-card"><button class="close" onclick="hideModal()">×</button><h2 id="modalTitle"></h2><p id="modalText"></p></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
